@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e6cc; 
+    color: #3e2f1c;
+  }
+  
+  header {
+    background-image: url('https://i.pinimg.com/736x/a9/c5/94/a9c594c30db46d9a64558aa76b154763.jpg'); 
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .subtitulo {
+    margin-top: 10px;
+    font-style: italic;
+    color: #97611b;
+  }
+  
+  .dica {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff6e2;
+    border-left: 8px solid #c49b66;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .dica::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url('https://i.pinimg.com/736x/ec/55/10/ec5510e0f496f2871bde16efe564c745.jpg'); 
+    background-size: cover;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .dica h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #5e3e1f;
+  }
+  
+  .dica ul {
+    padding-left: 20px;
+  }
+  
+  .botao-perfume {
+    display: inline-block;
+    background-color: #f5e7d3; /* Bege claro */
+    color: #4a3f35; /* Marrom escuro */
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .botao-perfume:hover {
+    background-color: #e9d6be; /* Bege um pouco mais escuro no hover */
+    transform: scale(1.03);
+  }
+  
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6d4ba;
+    font-size: 14px;
+    color: #7b5e3c;
+  }
+  

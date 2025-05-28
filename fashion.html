@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Tips</title>
+  <link rel="stylesheet" href="fashion.css">
+</head>
+<body>
+  <header>
+    <h1>Style Tips</h1>
+    <nav>
+      <ul>
+        <li><a href="fashion.html">Fashion</a></li>
+        <li><a href="skincare.html">Skin Care</a></li>
+        <li><a href="esmalte.html">Nails</a></li>
+        <li><a href="#">Hair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="carousel-container">
+      <button class="arrow left" onclick="scrollCarousel(-1)">←</button>
+
+      <div class="carousel" id="carousel">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/da/f8/50/daf85049ff41de3a04b12305e93cf924.jpg" alt="Look casual">
+          <h2>Casual</h2>
+          <p>Use jeans e malhas leves em tons neutros para o dia a dia.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/74/00/46/740046fee14243189d3b9eaa6bd4cf5c.jpg" alt="Look trabalho">
+          <h2>Trabalho</h2>
+          <p>Blazers estruturados e tons terrosos são ideais para ambientes profissionais.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/eb/69/83/eb6983d967fe995bc935906286b79004.jpg" alt="Look noite">
+          <h2>Noite</h2>
+          <p>Vestidos pretos ou peças com brilho são ótimos para saídas noturnas.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/a3/2d/99/a32d9918c1fcbd71d59af900838736eb.jpg" alt="Look festa">
+          <h2>Festa</h2>
+          <p>Invista em estampas e cortes ousados para brilhar nas festas.</p>
+        </div>
+      </div>
+      
+
+      <button class="arrow right" onclick="scrollCarousel(1)">→</button>
+    </div>
+
+    <div class="back-button">
+      <a href="dica.html">← Voltar para a Tela Inicial</a>
+    </div>
+  </main>
+
+  <script>
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById('carousel');
+      const cardWidth = carousel.querySelector('.card').offsetWidth + 32; // inclui o gap
+      carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

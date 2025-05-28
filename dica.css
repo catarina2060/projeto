@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f5e3d6; /* Silk */
+  color:                                                                                                                                                                                                                                                                                                                                                                                                
+  ,                                           
+   #C97C63; /* Dark Salmon */
+}
+
+header {
+  background-image: url('https://i.pinimg.com/736x/2f/b4/60/2fb4603af137cb5006d59dde4d503e6f.jpg'); 
+  color: rgb(202, 153, 124);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #C97C63;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.tip {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tip img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info h2 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.info p {
+  margin: 0;
+  font-size: 1rem;
+}

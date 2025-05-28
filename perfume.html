@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dicas de Perfume Masculino</title>
+  <link rel="stylesheet" href="perfume.css">
+</head>
+<body>
+  <header>
+    <h1>DICAS DE PERFUME MASCULINO</h1>
+  </header>
+
+  <main>
+    <div class="carrossel-container">
+      <button class="seta esquerda">&#8592;</button>
+      <div class="carrossel" id="carrossel">
+        <section class="dica">
+          <img src="https://i.pinimg.com/736x/72/78/1d/72781da1190607b47a28b05474b423ea.jpg" alt="Escolha o aroma certo">
+          <div>
+            <h2>Escolha o Aroma Certo</h2>
+            <p>Use fragrâncias que combinam com sua personalidade e a ocasião.</p>
+          </div>
+        </section>
+
+        <section class="dica">
+          <img src="https://i.pinimg.com/736x/6b/8a/41/6b8a414d3c5f464778aa23990cdb3543.jpg" alt="Aplique nos pontos pulsantes">
+          <div>
+            <h2>Aplique nos Pontos Pulsantes</h2>
+            <p>Pulso, pescoço e atrás das orelhas: onde o perfume dura mais.</p>
+          </div>
+        </section>
+
+        <section class="dica">
+          <img src="https://i.pinimg.com/736x/10/2d/de/102dde1845d50d82d6bdcc569d33edb6.jpg" alt="Use com moderação">
+          <div>
+            <h2>Use com Moderação</h2>
+            <p>Um ou dois sprays são suficientes. O excesso pode incomodar.</p>
+          </div>
+        </section>
+
+        <section class="dica">
+          <img src="https://i.pinimg.com/736x/57/fd/cf/57fdcf714580bff1ecafb24dfbeb3ef8.jpg" alt="Não esfregue">
+          <div>
+            <h2>Não Esfregue</h2>
+            <p>Deixe o perfume secar naturalmente. Esfregar altera a fragrância.</p>
+          </div>
+        </section>
+      </div>
+      <button class="seta direita">&#8594;</button>
+    </div>
+
+    <a class="voltar" href="dica2.html">← Voltar para dicas </a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Perfume Style. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const carrossel = document.getElementById("carrossel");
+    const btnEsq = document.querySelector(".esquerda");
+    const btnDir = document.querySelector(".direita");
+
+    btnEsq.addEventListener("click", () => {
+      carrossel.scrollBy({ left: -320, behavior: "smooth" });
+    });
+
+    btnDir.addEventListener("click", () => {
+      carrossel.scrollBy({ left: 320, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
