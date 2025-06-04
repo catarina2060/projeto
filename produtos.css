@@ -1,127 +1,93 @@
-body {
-  margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #F8F4F1; /* Silk */
-  color: #C97C63; /* Dark Salmon */
-}
-  
-  header {
-    background-image: url('https://i.pinimg.com/736x/1b/ce/9a/1bce9ab31fc2e15394f0e05698513291.jpg'); 
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-  }
 
-  .tips-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  .tip {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: #fff8f0;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  }
-  
-  .tip img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .tip h2 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0.2rem;
-    color: #3e2d26;
-  }
-  
-  .tip p {
-    margin: 0;
-  }
-  header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #ecb498;
-  }
-  
-  .subtitulo {
-    font-style: italic;
-    font-size: 1.1em;
-    color: #c9781d;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
-  }
-  
-  .dica-esmalte {
-    background-color: #f8eedb;
-    border-left: 6px solid #c49b74;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 25px;
-    box-shadow: 0 2px 6px rgba(180, 140, 100, 0.1);
-  }
-  
-  .dica-esmalte h2 {
-    margin-top: 0;
-    color: #5c3b24;
-  }
-  
-  .dica-esmalte ul {
-    list-style: square;
-    padding-left: 20px;
-  }
-  
-  .dica-esmalte li {
-    margin: 8px 0;
-  }
-  
-  a.voltar {
-    display: inline-block;
-    margin: 30px 0;
-    background-color: #c49b74;
-    color: rgb(255, 255, 255);
-    padding: 10px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  a.voltar:hover {
-    background-color: #a17856;
-  }
-  
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f5e6d0;
-    font-size: 14px;
-    color: #7b5e3c;
-  }
-  
-  
-  body {
+body {
     margin: 0;
     font-family: 'Georgia', serif;
     background-color: #f5e3d6;
     color: #C97C63;
   }
   
+  header {
+    background-image: url('https://i.pinimg.com/736x/2d/27/00/2d2700cf90f31bb937b86b860e8f796e.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+  
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
 
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-info h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #793f3f;
+}
+
+.product-info p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #f08478;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition:0.3s ease;
+}
+
+.btn:hover {
+  background: #c0392b;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2c3e50;
+  color: white;
+  font-size: 0.9rem;
+}
+
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(202, 119, 87);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  }
+  
   nav ul {
     list-style: none;
     padding: 0;

@@ -6,7 +6,7 @@ body {
   }
   
   header {
-    background-image: url('https://i.pinimg.com/736x/ec/bf/72/ecbf722cd23addd6550e0c7513bcee3a.jpg');
+    background-image: url('https://i.pinimg.com/736x/2d/27/00/2d2700cf90f31bb937b86b860e8f796e.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -94,4 +94,51 @@ body {
   .back-button a:hover {
     background-color: #80472d;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #f3a890;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ffe3d6;
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4a1f1f;
+    font-weight: 500;
+  }
+  
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    flex-wrap: wrap;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    max-width: 500px;
+  }
+  
+  .illustration img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  
   

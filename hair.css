@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f5decd;
+    color: #C97C63;
+  }
+  
+  header {
+    background-image: url('https://i.pinimg.com/736x/54/82/f8/5482f812854b64c1273faf782763fddf.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(202, 119, 87);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #C97C63;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #f6ecdd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 109px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #a05a4e;
+  }
+  
+  .card p {
+    font-size: 0.95em;
+    color: #a05a4e;
+  }
+  
+  .back-button {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .back-button a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #9c5a44;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button a:hover {
+    background-color: #C97C63;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #f3a890;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ffe3d6;
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4a1f1f;
+    font-weight: 500;
+  }
+  
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    flex-wrap: wrap;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    max-width: 500px;
+  }
+  
+  .illustration img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  
+  
