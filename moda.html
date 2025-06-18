@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicas de Moda Masculina</title>
+  <link rel="stylesheet" href="moda.css">
+</head>
+<body>
+
+  <header>
+    <h1>Style Masculino</h1>
+    <nav>
+      <ul>
+        <li><a href="moda.css">moda</a></li>
+        <li><a href="skin.html">skin care</a></li>
+        <li><a href="ds.html">personal development</a></li>
+        <li><a href="her.html">hair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="text">
+        <h1>MODA MASCULINA</h1>
+        <p>Quer destacar seu estilo em qualquer ambiente? Aqui você encontra dicas certeiras para montar visuais com personalidade, elegância e praticidade.</p>
+        <p>Do casual ao social, descubra como se vestir bem sem esforço — respeitando sua identidade e apostando em combinações inteligentes.</p>
+      </div>
+      <div class="illustration">
+        <img src="download 10.png" alt="Happy woman" />
+      </div>
+    </section>
+    
+    <div class="carousel-container">
+      <button class="arrow left" onclick="scrollCarousel(-1)">←</button>
+
+      <div class="carousel" id="carousel">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/ac/2f/db/ac2fdbfa0b8ca5a48d835645cb51dc2b.jpg" alt="Look casual">
+          <h2>Casual</h2>
+          <p>Camiseta básica, jeans claro e tênis preto: visual moderno e confortável.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/9d/43/73/9d43734896549ec9ab2d7ae39cda02cc.jpg" alt="Look trabalho">
+          <h2>Trabalho</h2>
+          <p>Camisa social, calça de alfaiataria e sapato em couro marrom. Discreto e elegante.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/ad/50/a3/ad50a3d3df715bc20d91f43a5629ad8c.jpg" alt="Look noite">
+          <h2>Noite</h2>
+          <p>Jaqueta de couro,tenis claro. Estilo com atitude para a noite.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/c0/d2/83/c0d283dcb4bbfe9dcebf9865522849da.jpg" alt="Look verão">
+          <h2>Verão</h2>
+          <p>Bermuda, camisa leve e chinelo yeezy slide. Fresco e charmoso.</p>
+        </div>
+      </div>
+
+      <button class="arrow right" onclick="scrollCarousel(1)">→</button>
+    </div>
+
+    <div class="back-button">
+      <a href="dica2.html">← Voltar para a Tela Inicial</a>
+    </div>
+  </main>
+
+  <script>
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById('carousel');
+      const cardWidth = carousel.querySelector('.card').offsetWidth + 32;
+      carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

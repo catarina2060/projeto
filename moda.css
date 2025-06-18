@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #e8e6dd; /* Bege escuro suave */
+  color: #3b4b3d; /* Verde Militar Pastel */
+
+}
+
+
+header {
+  background-image: url('https://i.pinimg.com/736x/56/93/4e/56934e8ddaf6575fd85195af47ce95c6.jpg'); 
+  color: #3b4b3d;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3b4b3d;
+  font-weight: bold;
+}
+
+
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro .text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.intro img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  scroll-behavior: smooth;
+  max-width: 90%;
+}
+
+.card {
+  width: 200px;
+  background-color: #a6b198;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.arrow {
+  background-color: #3b4b3d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: #2e3b2f;
+}
+
+.back-button {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #3b4b3d;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+  }
+
+  .arrow {
+    margin: 1rem 0;
+  }
+}
+

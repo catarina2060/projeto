@@ -5,6 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Style Tips</title>
   <link rel="stylesheet" href="produtos.css">
+  <style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f5e3d6;
+    color: #C97C63;
+  }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product-info h2 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .product-info p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #b68e5c;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #c4a07a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .back-button {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .back-button a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #9c5a44;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button a:hover {
+    background-color: #80472d;
+  }
+
+  </style>
 </head>
 <body>
 
@@ -17,17 +115,15 @@
         <li><a href="skincare.html">Skin Care</a></li>
         <li><a href="esmalte.html">Nails</a></li>
         <li><a href="hair.html">Hair</a></li>
-    </header>
-  
       </ul>
     </nav>
   </header>
 
- 
   <section class="container">
     <div class="product-card">
-      <img src="tinta-ruiva.jpg" alt="Tinta All Wear Paints - Vermelho Intenso">
+      <img src="tinta.png" alt="Tinta All Wear Paints - Vermelho Intenso">
       <div class="product-info">
+        <div class="price">R$ 29,90</div>
         <h2>Vermelho Intenso</h2>
         <p>Cor vibrante e duradoura. Ideal para destacar sua personalidade!</p>
         <a href="#" class="btn">Comprar</a>
@@ -35,8 +131,9 @@
     </div>
 
     <div class="product-card">
-      <img src="tinta-castanho.jpg" alt="Tinta All Wear Paints - Castanho Natural">
+      <img src="tinta2.png" alt="Tinta All Wear Paints - Castanho Natural">
       <div class="product-info">
+        <div class="price">R$ 27,90</div>
         <h2>Castanho Natural</h2>
         <p>Beleza discreta com brilho saudável. Para todos os estilos.</p>
         <a href="#" class="btn">Comprar</a>
@@ -44,13 +141,13 @@
     </div>
 
     <div class="product-card">
-      <img src="tinta-loiro.jpg" alt="Tinta All Wear Paints - Loiro Dourado">
+      <img src="tinta3.png" alt="Tinta All Wear Paints - Loiro Dourado">
       <div class="product-info">
+        <div class="price">R$ 31,90</div>
         <h2>Loiro Dourado</h2>
         <p>Um tom radiante para iluminar seu visual com sofisticação.</p>
         <a href="#" class="btn">Comprar</a>
       </div>
-
     </div>
   </section>
 
